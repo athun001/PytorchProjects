@@ -19,7 +19,7 @@ class Net(nn.Module):
         self.conv4 = nn.Conv2d(64, 64, 3, padding=1)
         self.pool = nn.MaxPool2d(2, 2)
         self.fc1 = nn.Linear(64 * 8 * 8, 512)
-		self.bn1 = nn.BatchNorm1d(num_features=512)
+	self.bn1 = nn.BatchNorm1d(num_features=512)
         self.fc2 = nn.Linear(512, 10)
 
     def forward(self, x):
